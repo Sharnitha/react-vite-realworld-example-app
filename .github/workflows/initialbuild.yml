@@ -15,6 +15,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: "npm install"
-        run: npm install
+        run: npm install @vitejs/plugin-react --save-dev
+        
       - name: "npm build dev"
         run: npm run dev
